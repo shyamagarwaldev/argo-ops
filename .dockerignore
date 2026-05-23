@@ -1,0 +1,12 @@
+.cursor
+node_modules
+.git
+.gitignore
+Dockerfile.*
+README.md
+generated
+dist
+src/generated
+.env
+ops
+ops/*
