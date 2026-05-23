@@ -27,7 +27,7 @@ jobs:
         run: |
           git clone https://github.com/shyamagarwaldev/ops.git
           cd ops
-          sed -i 's|image: ${{secrets.DOCKER_USERNAME}}/kub-1:.*|image: ${{secrets.DOCKER_USERNAME}}/kub-1:${{github.sha}}|' argo-ops/backend/manifest.yaml
+          sed -i 's|image: shyamagarwaldev/kub-1:.*|image: shyamagarwaldev/kub-1:${{github.sha}}|' argo-ops/backend/manifest.yaml
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
           git add argo-ops/backend/manifest.yaml
